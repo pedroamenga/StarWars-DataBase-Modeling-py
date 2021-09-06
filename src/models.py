@@ -32,7 +32,6 @@ class Planeta(Base):
     diameter = Column(Integer)
     climate = Column(String(50))
     relacionPersonaje = relationship("Personaje")
-    relacionVehiculo = relationship("Vehiculos")
 
 class Vehiculos(Base):
     __tablename__ = 'vehiculos'
